@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    color: #2b2a2a;
 }
 
 .nav-wrapper{
@@ -26,14 +27,18 @@
 .nav-links{
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
-    color: #808080;
     width: 30%;
     height: auto;
     display: flex;
     justify-content: space-between;
 }
 
-a {
+.nav-links > a {
     color: inherit;
     text-decoration: none;
+  }
+
+  .nav-links > a:hover{
+    color: black;
+    font-weight: 800;
   }
