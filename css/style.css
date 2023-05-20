@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     color: #2b2a2a;
 }
 
-.nav-wrapper{
+.nav-wrapper {
     max-width: 100vw;
     height: auto;
     display: flex;
@@ -15,16 +15,16 @@
     justify-content: space-around;
 }
 
-.nav-logo{
+.nav-logo {
     max-width: 20%;
 }
 
-.logo{
+.logo {
     width: 150px;
     height: auto;
 }
 
-.nav-links{
+.nav-links {
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
     width: 30%;
@@ -33,12 +33,12 @@
     justify-content: space-between;
 }
 
-.nav-links > a {
+a {
     color: inherit;
     text-decoration: none;
-  }
+}
 
-  .nav-links > a:hover{
-    color: black;
+a:hover{
+    color: rgb(165, 45, 45);
     font-weight: 800;
-  }
+}
