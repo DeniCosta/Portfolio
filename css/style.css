@@ -12,3 +12,11 @@
     justify-content: space-around;
 }
 
+.nav-logo{
+    max-width: 20%;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+}
