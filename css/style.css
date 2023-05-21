@@ -8,6 +8,13 @@
 
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 999;
+}
 
 
 .nav-wrapper {
@@ -48,11 +55,6 @@ a:hover {
     font-weight: 800;
 }
 
-main{
-    max-width: 90vw;
-    margin: 0 auto;;
-}
-
 .wrapper-title {
     display: flex;
     align-items: center;
@@ -60,11 +62,15 @@ main{
     justify-content: space-between;
     height: auto;
     margin: 30px auto;
+    max-width: 90vw;
 }
 
 .intro {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px auto 0 auto;
+    width: 100%;
 }
 
 h1 h2 {
@@ -72,32 +78,100 @@ h1 h2 {
 }
 
 h1 {
-    font-size: 8vw;
+    font-size: 112px;
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 52px;
 }
 
 h3 {
     font-family: 'Roboto Mono', monospace;
     font-weight: lighter;
-    font-size: 3vw;
+    font-size: 24px;
+    color: gray;
 }
 
-.image-home {
-    width: 30vw;
+.text-home {
+    max-width: 60%;
+}
+
+.image-home>img {
+    max-width: 400px;
     height: auto;
+
 }
 
 .arrow-home {
-    margin: 20px auto;
+    margin: 40px auto 10px auto;
 }
-p{
+
+/*section sobre */
+
+p {
     font-family: 'Roboto Mono', monospace;
-    font-weight: lighter;
+    font-weight:300;
     color: grey;
     font-size: 16px;
-    text-align: justify;
+    text-align: left;
     margin: 10px auto;
 }
+
+.wrapper-texto-sobre {
+    max-width: 60vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.wrapper-foto-sobre {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover::before {
+    opacity: 1;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.texto-image-sobre {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 3vw;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    max-width: 30vw;
+    padding: 20px;
+    text-align: left;
+    top: 50%; /* ajuste a posição vertical */
+    left: 25%; /* ajuste a posição horizontal */
+    transform: translate(-50%, -50%); /* centraliza o elemento */
+    z-index: 2; /* define uma camada superior */
+}
+
+/*section Hobbies */
+
+/*section Contato*/
