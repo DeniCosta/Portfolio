@@ -83,6 +83,8 @@ h1 {
 
 h2 {
     font-size: 52px;
+    margin: 60px auto 40px auto;
+    line-height: 60px;
 }
 
 h3 {
@@ -114,13 +116,14 @@ p {
     color: grey;
     font-size: 16px;
     text-align: left;
-    margin: 10px auto;
+    margin: 20px auto 20px auto;
 }
 
-.wrapper-texto-sobre {
+.wrapper-texto-sobre , .wrapper-hobbies{
     max-width: 60vw;
     text-align: center;
-    margin: 0 auto;
+    margin: 40px auto;
+    line-height: 32px;
 }
 
 
@@ -172,6 +175,17 @@ p {
     z-index: 2; /* define uma camada superior */
 }
 
+.assinatura{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.assinatura>img{
+    width: 150px;
+    height: auto;
+}
+
 /*section Hobbies */
+
 
 /*section Contato*/
