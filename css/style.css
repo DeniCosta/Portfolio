@@ -61,11 +61,12 @@ header {
 }
 
 .nav-wrapper {
-    max-width: 100vw;
+    max-width: 90vw;
     height: auto;
     display: flex;
     padding: 10px 0;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .wrapper-logo {
@@ -79,11 +80,12 @@ header {
 
 .nav-links {
     font-family: 'Roboto Mono', monospace;
-    font-size: 4vw;
-    width: 30%;
+    font-size: 16px;
+    width: 40vw;
     height: auto;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: nowrap;
 
 }
 /*Fim header*/
@@ -195,7 +197,7 @@ header {
     display: flex;
     flex-direction: column;
     max-width: 40vw;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: left;
   }
   
@@ -239,14 +241,19 @@ header {
   /*Footer*/
 
   footer{
+    width: 100%;
+    background-color: #fafafa;
+  }
+
+  .wrapper-footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100vw;
+    width: 90vw;
     height: auto;
     margin: 0 auto;
     padding: 50px 0 50px 50px;
-    background-color: #fafafa;
+    
   }
 
   .footer-links{
@@ -254,6 +261,7 @@ header {
     justify-content: space-between;
     width: 150px;
     height: auto;
+    padding-top: 20px;
 
   }
   /*Fim footer*/
