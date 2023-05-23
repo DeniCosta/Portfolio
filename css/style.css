@@ -32,7 +32,7 @@ h3 {
 
 p {
     font-family: 'Roboto Mono', monospace;
-    font-weight:300;
+    font-weight: 300;
     color: grey;
     font-size: 16px;
     text-align: left;
@@ -49,6 +49,7 @@ a:hover {
     color: rgb(192, 12, 12);
     font-weight: 800;
 }
+
 /*Fim definições gerais*/
 
 /*header*/
@@ -73,21 +74,31 @@ header {
     max-width: 30%;
 }
 
-.logo {
+.logo,
+.logo-footer {
     width: 150px;
     height: auto;
+}
+
+.logo-mobile {
+    display: none;
 }
 
 .nav-links {
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
-    width: 40vw;
+    width: 60vw;
     height: auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
 
 }
+
+.nav-links-mobile {
+    font-display: none;
+}
+
 /*Fim header*/
 
 /*Section home*/
@@ -122,10 +133,13 @@ header {
 .arrow-home {
     margin: 40px auto 10px auto;
 }
+
 /*Fim section Home*/
 
 /*section sobre */
-.wrapper-texto-sobre , .wrapper-hobbies , .wrapper-contato{
+.wrapper-texto-sobre,
+.wrapper-hobbies,
+.wrapper-contato {
     max-width: 60vw;
     text-align: center;
     margin: 40px auto;
@@ -175,21 +189,26 @@ header {
     max-width: 30vw;
     padding: 20px;
     text-align: left;
-    top: 50%; /* ajuste a posição vertical */
-    left: 25%; /* ajuste a posição horizontal */
-    transform: translate(-50%, -50%); /* centraliza o elemento */
-    z-index: 2; /* define uma camada superior */
+    top: 50%;
+    /* ajuste a posição vertical */
+    left: 25%;
+    /* ajuste a posição horizontal */
+    transform: translate(-50%, -50%);
+    /* centraliza o elemento */
+    z-index: 2;
+    /* define uma camada superior */
 }
 
-.assinatura{
+.assinatura {
     margin: 0 auto;
     text-align: center;
 }
 
-.assinatura>img{
+.assinatura>img {
     width: 150px;
     height: auto;
 }
+
 /* Fim section sobre */
 
 /*section Contato*/
@@ -199,29 +218,29 @@ header {
     max-width: 40vw;
     margin: 20px auto;
     text-align: left;
-  }
-  
-  .wrapper-contato label {
+}
+
+.wrapper-contato label {
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
-  }
-  
-  .wrapper-contato input[type="text"],
-  .wrapper-contato input[type="email"],
-  .wrapper-contato textarea {
+}
+
+.wrapper-contato input[type="text"],
+.wrapper-contato input[type="email"],
+.wrapper-contato textarea {
     width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
-  }
-  
-  .wrapper-contato textarea {
+}
+
+.wrapper-contato textarea {
     height: 100px;
-  }
-  
-  .wrapper-contato input[type="submit"] {
+}
+
+.wrapper-contato input[type="submit"] {
     background-color: grey;
     color: #fff;
     border: none;
@@ -231,21 +250,22 @@ header {
     cursor: pointer;
     padding: 5px;
     margin: 0 auto;
-  }
-  
-  .wrapper-contato input[type="submit"]:hover {
+}
+
+.wrapper-contato input[type="submit"]:hover {
     background-color: rgb(46, 45, 45);
-  }
-  /*Fim section Contato*/
+}
 
-  /*Footer*/
+/*Fim section Contato*/
 
-  footer{
+/*Footer*/
+
+footer {
     width: 100%;
     background-color: #fafafa;
-  }
+}
 
-  .wrapper-footer{
+.wrapper-footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -253,15 +273,117 @@ header {
     height: auto;
     margin: 0 auto;
     padding: 50px 0 50px 50px;
-    
-  }
 
-  .footer-links{
+}
+
+.footer-links {
     display: flex;
     justify-content: space-between;
     width: 150px;
     height: auto;
     padding-top: 20px;
 
-  }
-  /*Fim footer*/
+}
+
+/*Fim footer*/
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90vw;
+    }
+
+    .text-home {
+        max-width: 90vw;
+    }
+
+    .image-home {
+        max-width: 70vw;
+        margin-top: 20px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-mobile {
+        width: 22px;
+        height: auto;
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+}
+
+
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+
+    .wrapper-title {
+        max-width: 90vw;
+    }
+
+    .text-home {
+        max-width: 100%;
+    }
+
+    .image-home img {
+        max-width: 150px;
+    }
+
+    .arrow-home {
+        margin-top: 20px;
+    }
+
+    .wrapper-texto-sobre,
+    .wrapper-hobbies,
+    .wrapper-contato {
+        max-width: 90vw;
+    }
+
+    .texto-image-sobre {
+        font-size: 6vw;
+        max-width: 80vw;
+        padding: 10px;
+    }
+
+    .wrapper-contato form {
+        max-width: 80vw;
+    }
+
+    footer {
+        padding: 20px 0 20px 20px;
+    }
+
+    .footer-links {
+        width: 80px;
+    }
+}
